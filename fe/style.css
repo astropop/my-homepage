@@ -59,18 +59,18 @@ header {
 
 /* Ad Spaces */
 .ad-space-header {
-  background: rgba(30, 30, 50, 0.8);
+  /* background: rgba(30, 30, 50, 0.8); */
   padding: 10px;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   text-align: center;
   color: #666;
   font-size: 12px;
-  min-width: 728px;
+  /* min-width: 728px; */
   height: 90px;
   display: none;
   align-items: center;
   justify-content: center;
-  border: 2px dashed #444;
+  /* border: 2px dashed #444; */
 }
 
 .ad-space-header:not(:empty) {
@@ -100,7 +100,7 @@ header {
   display: none;
 }
 
-.ad-space-sidebar {
+/* .ad-space-sidebar {
   background: transparent;
   padding: 20px;
   border-radius: 8px;
@@ -118,17 +118,17 @@ header {
 
 .ad-space-sidebar:not(:empty) {
   display: flex;
-}
+} */
 
 /* Content Area */
 .content {
   flex: 1;
-  /* background: rgba(20, 20, 40, 0.6);*/
+
   padding: 60px 40px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   text-align: center;
-  /* backdrop-filter: blur(10px);*/
+
   position: relative;
 }
 .content::before {
@@ -233,9 +233,9 @@ h1 {
 
 /* Footer */
 footer {
-  background: rgba(20, 20, 40, 0.95);
+  /* background: rgba(20, 20, 40, 0.95); */
   padding: 30px 0;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); */
   margin-top: 40px;
 }
 
@@ -245,7 +245,7 @@ footer {
   padding: 0 20px;
 }
 
-.ad-space-footer {
+/* .ad-space-footer {
   background: rgba(30, 30, 50, 0.8);
   padding: 20px;
   border-radius: 8px;
@@ -258,11 +258,11 @@ footer {
   justify-content: center;
   border: 2px dashed #444;
   margin-bottom: 20px;
-}
+} */
 
-.ad-space-footer:not(:empty) {
+/* .ad-space-footer:not(:empty) {
   display: flex;
-}
+} */
 
 .footer-text {
   text-align: center;
