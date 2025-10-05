@@ -5,7 +5,7 @@ services:
     environment:
       - NODE_ENV=production
       - VIRTUAL_HOST=vnpsc.com,www.vnpsc.com
-      - VIRTUAL_PORT=80
+      - VIRTUAL_PORT=1993
       - LETSENCRYPT_HOST=vnpsc.com,www.vnpsc.com
       - LETSENCRYPT_EMAIL=spinatp@gmail.com
     volumes:
