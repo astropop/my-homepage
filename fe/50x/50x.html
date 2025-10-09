@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16" />
+    <title>500 - Internal Error | VNPS</title>
+    <meta name="google-adsense-account" content="ca-pub-3026647837154644" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N3RDNBNP");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-7Q6J9HYDY4");
+    </script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3026647837154644"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+      }
+
+      /* Background Image */
+      .background-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(
+          135deg,
+          #1a1a2e 0%,
+          #16213e 50%,
+          #0f3460 100%
+        );
+        overflow: hidden;
+      }
+
+      .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        opacity: 0.15;
+      }
+
+      /* Top Ad Space */
+      .ad-space-top {
+        padding: 20px;
+        text-align: center;
+        color: #666;
+        font-size: 12px;
+        min-height: 100px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ad-space-top:not(:empty) {
+        display: flex;
+      }
+
+      /* Main Content */
+      .main-content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+      }
+
+      .container {
+        text-align: center;
+        padding: 40px;
+
+        max-width: 600px;
+        margin: 20px;
+      }
+
+      .error-code {
+        font-size: 120px;
+        font-weight: bold;
+        color: #f87171;
+        text-shadow: 0 0 30px rgba(248, 113, 113, 0.5);
+        margin-bottom: 20px;
+        animation: glitch 3s ease-in-out infinite;
+      }
+
+      @keyframes glitch {
+        0%,
+        100% {
+          transform: translate(0);
+        }
+        20% {
+          transform: translate(-2px, 2px);
+        }
+        40% {
+          transform: translate(-2px, -2px);
+        }
+        60% {
+          transform: translate(2px, 2px);
+        }
+        80% {
+          transform: translate(2px, -2px);
+        }
+      }
+
+      h1 {
+        font-size: 32px;
+        color: #fca5a5;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      p {
+        font-size: 18px;
+        color: rgba(252, 165, 165, 0.8);
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .home-button {
+        display: inline-block;
+        padding: 15px 40px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+        border: none;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(220, 38, 38, 0.5);
+        margin-right: 10px;
+      }
+
+      .home-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 25px rgba(220, 38, 38, 0.7);
+        background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+      }
+
+      .reload-button {
+        display: inline-block;
+        padding: 15px 40px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+        border: none;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.5);
+        cursor: pointer;
+      }
+
+      .reload-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 25px rgba(37, 99, 235, 0.7);
+        background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      }
+
+      .broken-server {
+        font-size: 60px;
+        margin: 20px 0;
+        animation: shake 2s ease-in-out infinite;
+      }
+
+      @keyframes shake {
+        0%,
+        100% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(-5deg);
+        }
+        75% {
+          transform: rotate(5deg);
+        }
+      }
+
+      .buttons-group {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      /* Bottom Ad Space */
+      .ad-space-bottom {
+        padding: 20px;
+        text-align: center;
+        color: #666;
+        font-size: 12px;
+        min-height: 100px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ad-space-bottom:not(:empty) {
+        display: flex;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .error-code {
+          font-size: 80px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .home-button,
+        .reload-button {
+          padding: 12px 30px;
+          font-size: 16px;
+          width: 100%;
+          margin: 5px 0;
+        }
+
+        .buttons-group {
+          flex-direction: column;
+        }
+
+        .broken-server {
+          font-size: 40px;
+        }
+
+        .container {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <!-- Google Tag Manager (noscript) -->
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N3RDNBNP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+      <!-- End Google Tag Manager (noscript) -->
+    </noscript>
+    <!-- Background -->
+    <div class="background-container">
+      <img
+        src="https://lh3.googleusercontent.com/pw/AP1GczN-0w1uILifWhIbS3hF2rwaWjANW7KDQ3Hq6rnTJ9PfuSaCc886euK2twG9x-eZt8bcYEhaDeoV8v32m7N3GC3h9TRaswvIondlK3XPhWltJsJuPRqrpXMSzSzDZEfQ9Xau8UR9fwstMjAeYfQsQDNK=w558-h697-s-no"
+        alt="Background"
+        referrerpolicy="no-referrer"
+        class="background-image"
+      />
+    </div>
+
+    <!-- Top Ad Space -->
+    <div class="ad-space-top">
+      <!-- Ads -->
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="container">
+        <div class="error-code">500</div>
+        <div class="broken-server">⚠️</div>
+        <h1>Oops! Internal Error</h1>
+
+        <div class="buttons-group">
+          <a
+            href="https://www.facebook.com/groups/vietnampenspinning/"
+            class="home-button"
+            >Go to Facebook Group</a
+          >
+          <button onclick="location.reload()" class="reload-button">
+            Reload Page
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Ad Space -->
+    <div class="ad-space-bottom">
+      <!-- Ads -->
+    </div>
+  </body>
+</html>

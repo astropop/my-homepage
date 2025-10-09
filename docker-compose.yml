@@ -1,0 +1,21 @@
+services:
+  my-homepage:
+    image: nginx:alpine
+    container_name: my-homepage # keep this setting for automatically refreshing docker
+    environment:
+      - NODE_ENV=production
+      - VIRTUAL_HOST=vnpsc.com,www.vnpsc.com
+      - VIRTUAL_PORT=1993
+      - LETSENCRYPT_HOST=vnpsc.com,www.vnpsc.com
+      - LETSENCRYPT_EMAIL=spinatp@gmail.com
+    volumes:
+      - ./fe:/usr/share/nginx/html:ro
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - shared
+    restart: always
+
+networks:
+  shared:
+    external: true
+    name: my_tailt_shared_net
